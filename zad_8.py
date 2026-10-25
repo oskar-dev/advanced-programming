@@ -39,7 +39,11 @@ class Brewery:
         self._street = brewery_json.get("street")
 
     def __str__(self):
-        return f"name={self._name}, type={self._type}, address={self._address1}, website={self._website}, phone={self._phone}"
+        return (
+            f"name={self._name}, type={self._type},"
+            + f" address={self._address1}, website={self._website},"
+            + f"phone={self._phone}"
+        )
 
 
 parser = argparse.ArgumentParser()
@@ -60,4 +64,3 @@ for json in x.json():
 
 for brewery in breweries:
     print(brewery)
-
