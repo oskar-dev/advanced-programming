@@ -1,8 +1,3 @@
-# Stworzyć klasę Student, która posiada 2 parametry (name i marks) oraz jedną metodę is_passed, która zwraca wartość logiczną,
-# pozytywną gdy średnia ocen jest > 50 w przeciwnym przypadku negatywną. Następnie należy stworzyć 2 przykładowe obiekty klasy,
-# tak aby dla pierwszego obiektu metoda zwracała true , a dla drugiego false.
-
-
 class Student:
     name: str
     marks: list

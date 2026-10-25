@@ -1,33 +1,3 @@
-# 2. Stworzyć następujące klasy:
-#     - Library (klasa opisująca bibliotekę), posiadająca pola:
-#         - city
-#         - street
-#         - zip_code
-#         - open_hours (str)
-#         - phone
-#     - Employee (klasa opisująca pracownika biblioteki), posiadająca pola:
-#         - first_name
-#         - last_name
-#         - hire_date
-#         - birth_date
-#         - city
-#         - street
-#         - zip_code
-#         - phone
-#     - Book (klasa opisująca książkę), posiadająca pola
-#         - library
-#         - publication_date
-#         - author_name
-#         - author_surname
-#         - number_of_pages
-#     - Order (klasa opisująca zamówienie), posiadająca pola:
-#         - employee
-#         - student
-#         - books (lista obiektów klasy Book)
-#         - order_date
-from typing import OrderedDict
-
-
 class Library:
     def __init__(
         self, city: str, street: str, zip_code: str, open_hours: str, phone: str
