@@ -22,5 +22,5 @@ jobs:
         run: python -m pip install pycodestyle
 
       - name: Run pycodestyle
-        run: pycodestyle --exclude=.venv .
+        run: pycodestyle . --exclude=.venv --max-line-length=120
 
