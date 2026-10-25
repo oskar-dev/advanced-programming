@@ -1,0 +1,26 @@
+name: Python Code Style
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  pycodestyle:
+    name: Check Python Style
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install pycodestyle
+        run: python -m pip install pycodestyle
+
+      - name: Run pycodestyle
+        run: pycodestyle --exclude=.venv .
+
